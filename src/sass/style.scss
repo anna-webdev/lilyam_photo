@@ -2,3 +2,20 @@
 @import 'libs/fonts';
 @import 'base/variables';
 @import 'base/mixins';
+
+* {
+    font-family: 'FuturaLightC', sans-serif;
+}
+
+.container {
+    width: 1140px;
+    margin: 0 auto;
+    position: relative;
+}
+
+@import 'blocks/titles';
+@import 'blocks/header';
+@import 'blocks/social';
+@import 'blocks/promo';
+@import 'blocks/buttons';
+@import 'blocks/about';

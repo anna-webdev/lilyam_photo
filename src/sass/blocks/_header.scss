@@ -1,0 +1,59 @@
+.header {
+    position: fixed;
+    z-index: 10;
+    padding: 13px 150px;
+    min-height: 69px;
+    width: 100vw;
+    background: rgba(250, 237, 230, 0.7);
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__logo {
+        width: 188px;
+        img {
+            width: 100%;
+        }
+    }
+    &__items {
+        margin-bottom: 0;
+        margin-right: 50px;
+        padding: 0;
+        list-style-type: none;
+        display: flex;
+        justify-content: center;
+    }
+    &__item {
+        margin-right: 50px;
+        &:last-child {
+            margin-right: 0;
+        }
+        a {
+            position: relative;
+            text-decoration: none;
+            font-size: 16px;
+            color: rgba(0, 0, 0, 0.65);
+            display: block;
+            transition: 0.6s all;
+            &:after {
+                content: '';
+                display: block;
+                position: absolute;
+                top: 20px;
+                width: 0%;
+                height: 1px;
+                background-color: rgba(0, 0, 0, 0.65);
+                transition: 0.6s all;
+            }
+            &:hover {
+                font-family: 'FuturaBookC';
+                &:after {
+                    width: 100%;
+                }
+            }
+        }
+        
+        
+    }
+}

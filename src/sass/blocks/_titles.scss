@@ -1,0 +1,20 @@
+.title {
+    color: #000000;
+    font-family: 'TTBooksScript';
+    font-size: 56px;
+    font-weight: 400;
+    
+    &_about {
+        margin-bottom: 0;
+        &:after {
+            content: '';
+            display: block;
+            position: absolute;
+            height: 1px;
+            width: 101.7%;
+            top: 45px;
+            left: 170px;
+            background-color: #fff;
+        }
+    }
+}
