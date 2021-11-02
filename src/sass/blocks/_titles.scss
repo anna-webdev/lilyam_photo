@@ -3,18 +3,54 @@
     font-family: 'TTBooksScript';
     font-size: 56px;
     font-weight: 400;
+    margin-bottom: 0;
+    &:after {
+        content: '';
+        display: block;
+        position: absolute;
+        height: 1px;
+        top: 45px;
+        background-color: #9A9A9A;
+    }
     
     &_about {
-        margin-bottom: 0;
         &:after {
-            content: '';
-            display: block;
-            position: absolute;
-            height: 1px;
             width: 101.7%;
-            top: 45px;
             left: 170px;
             background-color: #fff;
         }
     }
+    &_works {
+        text-align: right;
+        &:after {
+            width: 100%;
+            right: 251px;
+        }
+    }
+    &_adv  {
+        text-align: center;
+        &:before {
+            content: '';
+            display: block;
+            position: absolute;
+            height: 1px;
+            width: 50%;
+            right: 770px;
+            top: 45px;
+            background-color: #9A9A9A;
+        }
+        &:after {
+            width: 49.1%;
+            left: 770px;
+        }
+    }
+    &_feed {
+        text-align: left;
+        &:after {
+            width: 101.7%;
+            left: 170px;
+        }
+
+    }
+
 }

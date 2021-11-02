@@ -2,6 +2,7 @@
 @import 'libs/fonts';
 @import 'base/variables';
 @import 'base/mixins';
+@import 'libs/slick';
 
 * {
     font-family: 'FuturaLightC', sans-serif;
@@ -19,3 +20,6 @@
 @import 'blocks/promo';
 @import 'blocks/buttons';
 @import 'blocks/about';
+@import 'blocks/portfolio';
+@import 'blocks/advantages';
+@import 'blocks/feedback';

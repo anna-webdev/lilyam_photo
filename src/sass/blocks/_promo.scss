@@ -10,6 +10,7 @@
         background-color: #F0D3C6;
     }
     &__wrapper {
+        position: relative;
         margin: 0 auto;
         width: 1115px;
         display: flex;
@@ -20,6 +21,9 @@
         position: relative;
         width: 345px;
         filter: drop-shadow(0px 20px 60px rgba(0, 0, 0, 0.17));
+        img {
+            width: 100%;
+        }
         &:nth-last-of-type(2) {
             &:after {
                 content: '';
@@ -34,11 +38,14 @@
         }
     }
     &__overlay {
+        z-index: 5;
         position: absolute;
-        width: 100%;
+        width: 345px;
         min-height: 141px;
         padding: 18px 44px 25px 44px;
         bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
         background: rgba(0, 0, 0, 0.5);
     }
     &__title {
