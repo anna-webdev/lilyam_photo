@@ -1,0 +1,29 @@
+.footer {
+    min-height: 350px;
+    padding: 75px 0 80px 0;
+    background-color: $background-dark;
+    &__divider {
+        margin: 0 auto;
+        width: 450px;
+        height: 1px;
+        background-color: #fff;
+    }
+    &__link {
+        margin: 61px auto 0 auto;
+        display: block;
+        text-align: center;
+        text-decoration: underline;
+        color: #fff;
+        font-size: 18px;
+        &:hover {
+            color: #fff;
+        }
+    }
+    &__logo {
+        width: 126px;
+        margin: 82px auto 0 auto;
+        img {
+            width: 100%;
+        }
+    }
+}

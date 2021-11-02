@@ -50,7 +50,29 @@
             width: 101.7%;
             left: 170px;
         }
-
+    }
+    &_price {
+        &:after {
+            background-color: #fff; 
+            left: 650px;
+            width: 59.5%;
+        }
+        &:before {
+            background-color: #fff; 
+            right: 650px;
+            width: 59.5%;
+        }
+    }
+    &_card {
+        font-size: 36px;
+        text-align: center;
+    }
+    &_contacts {
+        text-align: right;
+        &:after {
+            width: 70%;
+            right: 560px;
+        }
     }
 
 }
