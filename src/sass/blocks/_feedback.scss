@@ -2,13 +2,25 @@
     min-height: 800px;  
     padding: 100px 0 145px 0;  
     &__wrapper {
-        margin: 130px auto 0 auto;
+        position: relative;
+        margin: 120px auto 0 auto;
         width: 600px;
         img {
             width: 100%;
         }
-    }
-    
-        
-    
+    } 
+}
+.slick-prev, .slick-next {
+    position: absolute;
+    left: -45px;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 50px;
+    width: 45px;
+    background: none;
+    border: none;
+}
+.slick-next {
+    right: -45px;
+    left: auto;
 }

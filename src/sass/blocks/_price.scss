@@ -1,17 +1,17 @@
 .price {
-    padding: 100px 0 190px 0;
+    padding: 100px 0 80px 0;
     min-height: 900px;
     background: $background-dark;
     &__wrapper {
-        margin: 115px auto 0 auto;
+        margin: 100px auto 0 auto;
         display: flex;
         justify-content: space-between;
         align-items: flex-start;
     }
     &__card {
-        padding: 27px 20px 20px 20px;
+        padding: 27px 20px 120px 20px;
         width: 367px;
-        min-height: 450px;
+        min-height: 500px;
         background-color: #fff;
         position: relative;
     }
@@ -48,5 +48,38 @@
         bottom: 20px;
         left: 50%;
         transform: translateX(-50%);
+    }
+    &__attent {
+        width: 551px;
+        margin-top: 65px;
+    }
+    &__attent-title {
+        margin-bottom: 15px;
+        text-decoration: underline;
+        font-family: 'FuturaBookC';
+        font-size: 18px;
+        color:#fff;
+    }
+    &__attent-list {
+        list-style-type: none;
+        margin: 0;
+        padding-left: 19px;
+    }
+    &__attent-item {
+        position: relative;
+        margin-bottom: 12px;
+        font-size: 16px;
+        color:#fff;
+        line-height: 18px;
+        &::before {
+            content: '';
+            display: block;
+            width: 8px;
+            height: 8px;
+            position: absolute;
+            background: $main-color;
+            left: -19px;
+            top: 5px;
+        }
     }
 }

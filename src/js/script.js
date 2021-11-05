@@ -1,6 +1,6 @@
 $(document).ready(function() {
     
-  $('.promo__box').slick({
+  $('.promo__box').not('.slick-initialized').slick({
       dots: false,
       arrows: false,
       infinite: true,
@@ -11,7 +11,7 @@ $(document).ready(function() {
       autoplaySpeed: 8000
   });
 
-  $('.promo__box_second').slick({
+  $('.promo__box_second').not('.slick-initialized').slick({
       dots: false,
       arrows: false,
       infinite: true,
@@ -22,7 +22,7 @@ $(document).ready(function() {
       autoplaySpeed: 3000
   });
 
-  $('.promo__box_third').slick({
+  $('.promo__box_third').not('.slick-initialized').slick({
       dots: false,
       arrows: false,
       infinite: true,
@@ -33,16 +33,11 @@ $(document).ready(function() {
       autoplaySpeed: 12000
   });
 
-  $('#comm').slick({
-    dots: false,
-    arrows: false,
-    infinite: true,
-    speed: 500,
-    fade: true,
-    cssEase: 'linear',
-    autoplay: true,
-    autoplaySpeed: 12000
-});
+  $('#comm').not('.slick-initialized').slick({
+    prevArrow: '<button type="button" class="slick-prev"><img src="../icons/prev_arrow.svg"></button>',
+    nextArrow: '<button type="button" class="slick-next"><img src="../icons/next_arrow.svg"></button>'
+
+  });
 
 $('ul.portfolio__tabs').on('click', 'li:not(.portfolio__tab_active)', function() {
     $(this)
